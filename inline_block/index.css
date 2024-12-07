@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page-container {
+    background-color: rgb(69, 18, 173); 
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+    margin-left: 20px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.image-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    position: relative;
+}
+
+.box-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.box-text {
+    font-size: 14px;
+    color: gray;
+    align-self: flex-start;
+}
+
+.box-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.image-square-container {
+    display: flex;
+    gap: 10px; 
+    width: 100%;
+}
+
+.image-square {
+    flex: 1;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+}
+
+.image-square h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}

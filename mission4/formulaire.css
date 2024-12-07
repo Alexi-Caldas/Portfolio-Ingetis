@@ -1,0 +1,128 @@
+/* Style de base pour le corps */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Centrer et styliser le formulaire */
+form {
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #dedede;
+    border-radius: 10px;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Table pour bien organiser les champs */
+table {
+    width: 100%;
+}
+
+/* Style des champs de texte et du bouton */
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="search"], 
+input[type="url"], 
+input[type="number"], 
+input[type="date"], 
+input[type="color"], 
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style spécifique pour le champ de fichier (avatar) */
+input[type="file"] {
+    border: none;
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style spécifique pour la jauge (range slider) */
+input[type="range"] {
+    width: 100%;
+    margin: 8px 0;
+}
+
+/* Style pour les boutons radio et checkbox */
+input[type="checkbox"], 
+input[type="radio"] {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+/* Style pour le label */
+label {
+    font-weight: bold;
+}
+
+/* Bouton valider */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+/* Effet de survol (hover) pour le bouton */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Espacement entre les lignes */
+tr {
+    margin-bottom: 15px;
+}
+
+/* Bordures arrondies pour les boutons radio et checkbox */
+input[type="radio"], input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+/* Style pour l'ensemble du formulaire pour le rendre centré et avec des espaces propres */
+form table {
+    border-spacing: 10px;
+}
+
+/* Style des options de sélection (fruits préférés, pays) */
+select {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styles pour le placeholder dans les champs */
+input::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
+/* Style pour une meilleure lisibilité sur mobile */
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input, select, button {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,107 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 780px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.info {
+    max-width: 60%;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+}
+
+/* Style des sections principales */
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    color: #333;
+}
+
+/* Colonne des dates et colonne des détails */
+.dates-column {
+    width: 20%;
+    float: left;
+    font-weight: bold;
+    color: #666;
+    padding-right: 10px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.details-column {
+    width: 75%;
+    float: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+/* Clearfix pour contenir les floats */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #aaa;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dates-column, .details-column {
+        width: 100%;
+        float: none;
+        text-align: left;
+        padding: 0;
+    }
+}

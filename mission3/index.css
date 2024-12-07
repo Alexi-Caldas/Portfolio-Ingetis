@@ -1,0 +1,120 @@
+/* Style global */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background: url('fe_MacOS.png') no-repeat center center fixed; /* Image de fond */
+    background-size: cover; /* Image de fond qui couvre toute la page */
+    color: #333; /* Couleur de texte */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Remplir l'écran en hauteur */
+    box-sizing: border-box;
+}
+
+/* Conteneur principal */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Fond translucide */
+    padding: 40px;
+    border-radius: 12px; /* Coins arrondis */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    backdrop-filter: blur(8px); /* Effet flou sur l'arrière-plan */
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Titre principal */
+.container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+}
+
+/* Conteneur des liens */
+.links-box {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Liste de liens */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+/* Liens stylisés comme des boutons */
+ul li a {
+    display: block;
+    background: linear-gradient(145deg, #f2f2f2, #e2e2e2); /* Effet de gradient */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 20px; /* Taille du bouton identique pour tous */
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Effet de survol sur les liens */
+ul li a:hover {
+    background: linear-gradient(145deg, #e2e2e2, #f2f2f2); /* Inversion du gradient */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ombre renforcée */
+    transform: translateY(-3px); /* Légère élévation */
+}
+
+/* Bouton retour identique aux autres boutons */
+.back-button {
+    margin-top: 20px;
+}
+
+.btn-back {
+    display: block; /* Ajout pour forcer un comportement de lien standard */
+    background: linear-gradient(145deg, #f2f2f2, #e2e2e2); /* Gradient similaire aux autres boutons */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 12px 20px; /* Taille identique avec les autres boutons */
+    text-decoration: none;
+    color: #333; /* Couleur du texte identique aux liens */
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Effet de survol sur le bouton retour */
+.btn-back:hover {
+    background: linear-gradient(145deg, #e2e2e2, #f2f2f2); /* Inversion du gradient */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ombre renforcée */
+    transform: translateY(-3px); /* Légère élévation */
+}
+
+.btn-back:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    ul li a {
+        font-size: 1rem;
+        padding: 10px 15px; /* Ajustement du padding sur petits écrans */
+    }
+}

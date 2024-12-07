@@ -1,0 +1,140 @@
+/* Style global de la page */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-image: url('fe_MacOS.jpg'); /* Ajoutez le lien vers votre fond d'écran ici */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc légèrement transparent */
+    padding: 20px 40px; /* Ajout d'une marge intérieure plus large pour centrer les éléments */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Garantit que le padding n'affecte pas les dimensions de l'élément */
+}
+
+/* Logo du header */
+header .logo h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Menu du header (liens) */
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Liens du header */
+header nav ul li a {
+    color: #007aff; /* Bleu classique macOS */
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #005bb5;
+}
+
+/* Ajustement des boutons en haut à droite */
+header .actions {
+    display: flex;
+    gap: 20px; /* Espace entre les boutons */
+}
+
+/* Section principale */
+main {
+    padding: 100px 20px 40px; /* Donne de l'espace en haut pour le header */
+    text-align: center;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+a {
+    color: #007aff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+/* Footer - bouton retour */
+footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #f0f0f5;
+    color: #007aff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #007aff;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #e5e5eb;
+    transform: translateY(-3px);
+}
+
+.btn-back:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription - TEDx Paris 2025</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <h1>Inscrivez-vous à l'événement TEDx - Paris 2025</h1>
+
+    <form action="/submit" method="post">
+        <table border="0">
+            <!-- Pseudo -->
+            <tr>
+                <td><label for="pseudo">Pseudo :</label></td>
+                <td><input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" maxlength="50" required></td>
+            </tr>
+            <!-- Mot de passe -->
+            <tr>
+                <td><label for="motdepasse">Mot de passe :</label></td>
+                <td><input type="password" id="motdepasse" name="motdepasse" placeholder="Votre mot de passe" maxlength="20" required></td>
+            </tr>
+            <!-- Prénom -->
+            <tr>
+                <td><label for="prenom">Prénom :</label></td>
+                <td><input type="text" id="prenom" name="prenom" placeholder="Votre prénom" maxlength="50" required></td>
+            </tr>
+            <!-- Email -->
+            <tr>
+                <td><label for="email">Email :</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Votre email" maxlength="100" required></td>
+            </tr>
+            <!-- Avatar (fichier) -->
+            <tr>
+                <td><label for="avatar">Avatar :</label></td>
+                <td><input type="file" id="avatar" name="avatar" accept="image/*" required></td>
+            </tr>
+            <!-- Pays -->
+            <tr>
+                <td><label for="pays">Pays :</label></td>
+                <td>
+                    <select id="pays" name="pays" required>
+                        <option value="">Choisissez votre pays</option>
+                        <option value="France">France</option>
+                        <option value="Belgique">Belgique</option>
+                        <option value="Suisse">Suisse</option>
+                        <!-- Ajouter d'autres options selon les besoins -->
+                    </select>
+                </td>
+            </tr>
+            <!-- Fruits préférés -->
+            <tr>
+                <td><label for="fruits">Quels sont vos fruits préférés :</label></td>
+                <td>
+                    <input type="checkbox" name="fruits" value="Pomme"> Pomme
+                    <input type="checkbox" name="fruits" value="Banane"> Banane
+                    <input type="checkbox" name="fruits" value="Orange"> Orange
+                    <input type="checkbox" name="fruits" value="Fraise"> Fraise
+                </td>
+            </tr>
+            <!-- Civilité -->
+            <tr>
+                <td><label for="civilite">Civilité :</label></td>
+                <td>
+                    <input type="radio" name="civilite" value="Monsieur" required> Monsieur
+                    <input type="radio" name="civilite" value="Madame" required> Madame
+                </td>
+            </tr>
+            <!-- Ville -->
+            <tr>
+                <td><label for="ville">Ville :</label></td>
+                <td><input type="text" id="ville" name="ville" placeholder="Votre ville" maxlength="100" required></td>
+            </tr>
+            <!-- Code postal -->
+            <tr>
+                <td><label for="codepostal">Code postal :</label></td>
+                <td><input type="text" id="codepostal" name="codepostal" placeholder="Votre code postal" maxlength="5" required></td>
+            </tr>
+            <!-- Adresse -->
+            <tr>
+                <td><label for="adresse">Adresse :</label></td>
+                <td><input type="text" id="adresse" name="adresse" placeholder="Votre adresse" maxlength="255" required></td>
+            </tr>
+            <!-- Date de naissance -->
+            <tr>
+                <td><label for="datenaissance">Date de naissance :</label></td>
+                <td><input type="date" id="datenaissance" name="datenaissance" required></td>
+            </tr>
+            <!-- Jauge (range slider) -->
+            <tr>
+                <td><label for="jauge">Jauge :</label></td>
+                <td><input type="range" id="jauge" name="jauge" min="0" max="100"></td>
+            </tr>
+            <!-- Téléphone -->
+            <tr>
+                <td><label for="telephone">Téléphone :</label></td>
+                <td><input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" maxlength="15" required></td>
+            </tr>
+            <!-- Recherche -->
+            <tr>
+                <td><label for="recherche">Recherche :</label></td>
+                <td><input type="search" id="recherche" name="recherche" placeholder="Recherchez ici"></td>
+            </tr>
+            <!-- URL -->
+            <tr>
+                <td><label for="url">URL :</label></td>
+                <td><input type="url" id="url" name="url" placeholder="https://votre-site.com"></td>
+            </tr>
+            <!-- Couleur favorite -->
+            <tr>
+                <td><label for="couleur">Votre couleur préférée :</label></td>
+                <td><input type="color" id="couleur" name="couleur" value="#000000"></td>
+            </tr>
+            <!-- Bouton valider -->
+            <tr>
+                <td colspan="2"><button type="submit">Valider</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

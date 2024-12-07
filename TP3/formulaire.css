@@ -1,0 +1,139 @@
+/* Style général */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('fe_MacOS.jpg') no-repeat center center fixed; /* Image de fond */
+    background-size: cover; /* Couvre toute la page */
+}
+
+/* Conteneur du formulaire */
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Fond translucide */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Flou en arrière-plan */
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Titre du formulaire */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Style des groupes de champs */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Style des labels */
+.input-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Style des champs de saisie */
+input[type="text"], input[type="tel"], textarea {
+    width: 95%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Focus sur les champs */
+input[type="text"]:focus, input[type="tel"]:focus, textarea:focus {
+    border-color: #007aff; /* Bord bleu à la Mac */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5);
+}
+
+/* Groupe de boutons */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les boutons */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Style des boutons */
+button, .btn-back {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 30%; /* Pour que les boutons aient la même largeur */
+    text-align: center;
+}
+
+/* Style du bouton Envoyer */
+button {
+    background-color: #007aff; /* Bleu MacOS */
+    color: white;
+}
+
+/* Style du bouton Annuler */
+.btn-secondary {
+    background-color: #e1e1e1;
+    color: #333;
+}
+
+/* Style du bouton Retour */
+.btn-back {
+    background-color: #e1e1e1;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Effet de survol pour les boutons */
+button:hover, .btn-back:hover, .btn-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Effet de clic pour les boutons */
+button:active, .btn-back:active, .btn-secondary:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"], input[type="tel"], textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    button, .btn-back, .btn-secondary {
+        padding: 10px;
+        width: 100%; /* Les boutons prennent toute la largeur sur mobile */
+    }
+}

@@ -1,0 +1,43 @@
+/* Style général du corps */
+body {
+    display: flex; /* Utilisation de Flexbox pour centrer le contenu */
+    flex-direction: column; /* Alignement vertical des éléments */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+    height: 140vh; /* Hauteur de la fenêtre d'affichage */
+    margin: 0; /* Suppression des marges par défaut */
+    font-family: Arial, sans-serif; /* Police de caractères */
+    background-color: #f4f4f4; /* Couleur de fond */
+    text-align: center; /* Centrage du texte */
+}
+
+/* Style des images */
+img {
+    max-width: 50%; /* Ajuste la largeur de l'image à 50% de la largeur du conteneur */
+    height: auto; /* Conserve les proportions de l'image */
+    margin-top: 20px; /* Espacement au-dessus de l'image */
+}
+
+/* Style des titres et paragraphes */
+h1 {
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+p {
+    margin: 0 20px; /* Espacement horizontal pour le texte du paragraphe */
+    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+}
+
+.btn {
+    color: #007BFF; /* Couleur du texte */
+    text-decoration: none;
+    margin-top: 20px; /* Espacement au-dessus du bouton */
+}
+
+/* Style spécifique pour l'iframe */
+.video {
+    width: 50%; /* Ajuste la largeur de l'iframe à 90% de la largeur du conteneur */
+    max-width: 1200px; /* Limite la largeur maximale de l'iframe */
+    height: 675px; /* Hauteur fixe pour maintenir le ratio d'aspect 16:9 */
+    margin-top: 20px; /* Espacement au-dessus de l'iframe */
+}

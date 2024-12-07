@@ -1,0 +1,161 @@
+/* Style général */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('fe_MacOS.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Conteneur principal avec fond flou */
+.futuristic-background {
+    background: rgba(255, 255, 255, 0.5); /* Fond léger et translucide */
+    backdrop-filter: blur(15px); /* Flou de l'arrière-plan */
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+/* Titre principal */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Groupe de champs du formulaire */
+.form-group {
+    margin-bottom: 20px;
+    width: 100%; /* Les champs de saisie prennent toute la largeur du conteneur */
+}
+
+/* Style des labels */
+.form-group label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Champs de saisie */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    /* max-width: 400px; */
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Prendre en compte le padding dans la largeur totale */
+    transition: all 0.3s ease;
+}
+
+/* Focus sur les champs de saisie */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007aff; /* Couleur bleue typique des inputs sur Mac */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5);
+}
+
+/* Groupe de boutons */
+.button-group {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px; /* Espacement entre les boutons */
+    width: 100%; /* S'assure que les boutons prennent toute la largeur */
+    margin-bottom: 20px; /* Un peu d'espace sous les boutons */
+}
+
+/* Style des boutons */
+.btn, .btn-secondary {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%; /* Les boutons prennent toute la largeur du conteneur */
+    display: block;
+}
+
+/* Style du bouton principal (connexion) */
+.btn {
+    background-color: #007aff; /* Bleu MacOS */
+    color: white;
+}
+
+/* Style du bouton secondaire (annuler) */
+.btn-secondary {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Style du bouton de retour (identique aux autres boutons) */
+.btn-back {
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 100%; /* Assurer que le bouton de retour a la même largeur que les autres */
+}
+
+/* Effet de survol pour les boutons */
+.btn:hover, .btn-secondary:hover, .btn-back:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Effet de clic pour les boutons */
+.btn:active, .btn-secondary:active, .btn-back:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Bouton retour : mettre le style dans un bloc */
+.back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .futuristic-background {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 10px;
+        max-width: 100%; /* Sur petits écrans, les inputs prennent toute la largeur */
+    }
+
+    .btn, .btn-secondary, .btn-back {
+        padding: 10px 15px;
+    }
+}

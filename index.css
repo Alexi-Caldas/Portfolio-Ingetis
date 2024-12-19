@@ -1,124 +1,60 @@
-/* Style global */
+/* Apple-like minimalist style */
 body {
-    font-family: 'San Francisco', Arial, sans-serif;
-    background: url('fe_Mac.jpg') no-repeat center center fixed; /* Fond d'écran */
-    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
-    color: #000; /* Couleur du texte */
-    margin: 0; /* Supprime les marges par défaut */
-    padding: 0; /* Supprime les espacements internes */
-    display: flex; /* Flexbox pour centrer le contenu */
-    flex-direction: column; /* Organisation verticale */
-    align-items: center; /* Centre horizontalement */
-    justify-content: flex-start; /* Positionne le contenu en haut */
-    height: 100vh; /* Prend toute la hauteur de l'écran */
-    box-sizing: border-box; /* Inclut padding et border dans les dimensions */
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
 }
 
-/* Header styling */
-header {
+.container {
     text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #1d1d1f;
+}
+
+.button-group {
     margin-top: 20px;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-header h2 {
-    font-size: 1.8rem;
-    margin-top: 5px;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* Main content */
-main {
-    margin-top: 60px; /* Centrer davantage le sommaire */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.button {
+    display: block;
     width: 100%;
-    height: 60%; /* Positionnement vertical optimisé */
-}
-
-main h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-/* Navigation links container */
-nav {
-    background: rgba(255, 255, 255, 0.8); /* Fond translucide moderne */
-    border: 1px solid rgba(200, 200, 200, 0.6);
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Douce ombre portée */
-    padding: 40px; /* Taille ajustée pour plus d'espace intérieur */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    width: 90%;
-    max-width: 900px;
-    backdrop-filter: blur(8px); /* Effet flou moderne */
-}
-
-/* Individual links */
-nav a {
-    background: linear-gradient(145deg, #f2f2f2, #e2e2e2); /* Effet moderne et légèrement embossé */
-    border: 1px solid #cccccc;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #0070c9;
+    border: none;
     border-radius: 8px;
-    padding: 12px 20px;
     text-decoration: none;
-    color: #333;
-    font-size: 1rem;
     text-align: center;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Effet léger d'élévation */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
 }
 
-nav a:hover {
-    background: linear-gradient(145deg, #e2e2e2, #f2f2f2); /* Inversement du gradient */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ombre renforcée */
-    transform: translateY(-3px); /* Lien légèrement soulevé au survol */
+.button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
 }
 
-/* Responsive design */
-@media screen and (max-width: 768px) {
-    nav {
-        gap: 15px;
-        padding: 20px;
-    }
-
-    nav a {
-        font-size: 0.9rem;
-        padding: 10px 15px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    main {
-        margin-top: 40px;
-        height: auto; /* Réduit la hauteur pour les petits écrans */
-    }
-
-    nav {
-        width: 95%;
-    }
-
-    nav a {
-        padding: 8px 12px;
-        font-size: 0.8rem;
-    }
+.button:active {
+    background-color: #004a94;
+    transform: translateY(0);
 }
